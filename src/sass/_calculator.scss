@@ -1,0 +1,94 @@
+body {
+    font-family: 'Alfa Slab One', cursive;
+    color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background: linear-gradient(151.41deg, #E8CBC0 -17.51%, #636FA4 106.64%);
+    background-size: 100%;
+    min-height: 100vh;
+}
+
+.calc__main {
+    width: 300px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.56);
+    box-shadow: 6px 9px 72px rgba(0, 0, 0, 0.07);
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.calc__title {
+    font-size: large;
+}
+
+.calc__content {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: inherit;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.calc__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.calc__item {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc__btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: linear-gradient(319.35deg, #E5E8FB 12.83%, #FFFFFF 80.68%);
+    box-shadow: 0px 4px 15px rgba(204, 222, 254, 0.52);
+    border-radius: 71px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+     :focus {
+        background: linear-gradient(134.05deg, #E4E6F4 18.94%, #FCFBFB 62.49%, #FFFFFF 82.11%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        filter: blur(0.6px);
+    }
+}
+
+.calc__btn-orange {
+    background: linear-gradient(321.91deg, #FF7E5F 11.54%, #FEB47B 88.92%);
+    box-shadow: 0px 4px 15px #FF7E5F;
+    &:hover,
+     :focus {
+        background: linear-gradient(137.94deg, #FF7E5F 18.65%, #FEAE78 60.44%, #FEB47B 81.05%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        filter: blur(0.6px);
+    }
+}
+
+.calc__btn-blue {
+    background: linear-gradient(141.98deg, #E4EEFF 18.88%, #A6C2EA 90.48%);
+    box-shadow: 0px 4px 15px rgba(125, 172, 255, 0.52);
+    &:hover,
+     :focus {
+        background: linear-gradient(141.48deg, #A2B9E3 18.53%, #D6E3F7 67.9%, #EBF3FF 88.91%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        filter: blur(0.6px);
+    }
+}
